@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GREEN.HARVEST</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="desktop.css">
+    <link rel="stylesheet" type="text/css" href="tablet.css">
+    <link rel="stylesheet" type="text/css" href="mobile.css">
+</head>
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="./assets/logo.svg" alt="GREEN.HARVEST">
+        </div>
+        <div class="menu__overlay" id="burgerMenu">
+            <nav class="header__menu">
+                <a href="#infoblock" class="header__link" onclick="toggleMenu()">How It Works</a>
+                <a href="#vegetables" class="header__link" onclick="toggleMenu()">Vegetables</a>
+                <a href="#reviews" class="header__link" onclick="toggleMenu()">Reviews</a>
+                <button class="header__button" onclick="toggleMenu()">SHOP NOW</button>
+            </nav> 
+        </div>
+        
+        <div class="header__burger" onclick="toggleMenu()">
+            <span class="burger__button"></span>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__content">
+                <div class="hero__content-wrapper">
+                    <h1 class="hero__title text_letter-spacing">organic vegetables to your diet today!</h1>
+                    <p class="hero__description">
+                        Our expertly curated vegetable baskets are made with the freshest, 
+                        highest quality vegetables available. Fresh Harvest Box has got you covered. 
+                        Fresh, high-quality vegetables in expertly curated vegetable baskets delivered to you.
+                    </p>
+                </div>
+            </div>
+            <div class="hero__image"></div>
+        </section>
+
+        <section class="infoblock" id="infoblock">
+            <div class="infoblock__media">
+                <div class="infoblock__media_img-wrapper">
+                    <img src="./assets/infoblock__media_img.png" alt="Photo illustration" class="infoblock__media_img"> 
+                </div>
+            </div>
+            <div class="infoblock__information">
+                <h2 class="information__title text_letter-spacing">
+                    To order your <span class="information__title_span">vegetable</span> basket, 
+                    simply follow these <span class="information__title_span">easy steps</span>
+                </h2>
+                <p class="information__description">
+                    Our baskets are assembled with care and delivered straight to your doorstep, 
+                    so you can enjoy the taste of fresh fruit without ever leaving your home.
+                </p>
+                <div class="information__blocks">
+                    <div class="information__block">
+                        <div class="block__number-wrapper">
+                            <p class="block__number number__first">1</p>
+                        </div>  
+                        <p class="block__text">
+                            Just choose <strong class="block__text_strong">the vegetable</strong> you want to order by 
+                            clicking on the checkboxes <strong class="block__text_strong">next to it</strong>.
+                        </p>
+                    </div>
+                    <div class="information__block">
+                        <div class="block__number-wrapper">
+                            <p class="block__number number__second">2</p>  
+                        </div>
+                        <p class="block__text">
+                            Click on <strong class="block__text_strong">the basket</strong> and fill out the form.
+                        </p>
+                    </div>
+                    <div class="information__block">
+                        <div class="block__number-wrapper">
+                            <p class="block__number number__third">3</p> 
+                        </div>
+                        <p class="block__text">
+                            Sit back and relax! Your <strong class="block__text_strong">fresh vegetables</strong> basket will be delivered.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="advertisement">
+            <h3 class="advertisement__text text_letter-spacing">
+                <span class="advertisement__text_span">Discount up to 40%!</span> Taste the vitamins and keep your health
+            </h3>
+        </section>
+
+        <section class="vegetables" id="vegetables">
+            <div class="vegetables__intro">
+                <h2 class="vegetables__title text_letter-spacing">organic <span class="vegetables__title_span">vegetables</span></h2>
+                <p class="vegetables__description">
+                    Our organic vegetables are hand-picked from local farms and delivered straight to your doorstep, 
+                    ensuring that you get the freshest and most nutritious produce possible.
+                </p>
+            </div>
+            <div class="vegetables__list">
+                <div class="vegetable">
+                    <h3 class="vegetable__title text_letter-spacing">eggplant</h3>
+                    <p class="vegetable__description text_letter-spacing">60 UAH / kg</p>
+                    <img src="./assets/eggplant.png" alt="eggplant" class="vegetable__image">
+                </div>
+                <div class="vegetable">
+                    <h3 class="vegetable__title text_letter-spacing">leek</h3>
+                    <p class="vegetable__description text_letter-spacing">50 UAH / kg</p>
+                    <img src="./assets/leek.png" alt="leek" class="vegetable__image">
+                </div>
+                <div class="vegetable">
+                    <h3 class="vegetable__title text_letter-spacing">mushrooms</h3>
+                    <p class="vegetable__description text_letter-spacing">40 UAH / kg</p>
+                    <img src="./assets/mushrooms.png" alt="mushrooms" class="vegetable__image">
+                </div>
+                <div class="vegetable">
+                    <h3 class="vegetable__title text_letter-spacing">corn</h3>
+                    <p class="vegetable__description text_letter-spacing">60 UAH / kg</p>
+                    <img src="./assets/corn.png" alt="corn" class="vegetable__image">
+                </div>
+                <div class="vegetable">
+                    <h3 class="vegetable__title text_letter-spacing">sweet potatoes</h3>
+                    <p class="vegetable__description text_letter-spacing">50 UAH / kg</p>
+                    <img src="./assets/potatoes.png" alt="sweet potatoes" class="vegetable__image">
+                </div>
+                <div class="vegetable">
+                    <h3 class="vegetable__title text_letter-spacing">carrots</h3>
+                    <p class="vegetable__description text_letter-spacing">40 UAH / kg</p>
+                    <img src="./assets/carrot.png" alt="carrots" class="vegetable__image">
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews" id="reviews">
+            <div class="reviews__intro">
+                <h2 class="reviews__title text_letter-spacing">reviews from our <span class="reviews__title_span">customers</span></h2>
+                <p class="reviews__description">Words of our customers: impressions and opinions about the quality of our services and the freshness of our products.</p>
+            </div>
+            <div class="reviews__list">
+                <div class="review">
+                    <img src="./assets/reviewJohn.png" alt="John Wax" class="review__image">
+                    <p class="review__name">John Wax</p>
+                    <p class="review__text">
+                        These vegetables are my secret to delicious and healthy meals. 
+                        The quality is always at the highest level, the aroma and taste 
+                        are enchanting. I advise every fan of real products!
+                    </p>
+                </div>
+                <div class="review">
+                    <img src="./assets/reviewVictoria.png" alt="Victoria Romashenko" class="review__image">
+                    <p class="review__name">Victoria Romashenko</p>
+                    <p class="review__text">
+                        I love how fast and fresh the vegetables are delivered. 
+                        Salads always turn out so appetizing, and soups are real 
+                        masterpieces. The quality is impeccable!
+                    </p>
+                </div>
+                <div class="review">
+                    <img src="./assets/reviewIhor.png" alt="Ihor Trachuk" class="review__image">
+                    <p class="review__name">Ihor Trachuk</p>
+                    <p class="review__text">
+                        Recently tried my fresh tomatoes and peppers - amazing! 
+                        The authenticity of the taste, as if from the garden 
+                        directly to my table. It is now my main vegetable supplier.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="order">
+            <div class="order__intro">
+                <h2 class="order__title text_letter-spacing">
+                    Fresh <span class="order__title_span">Harvest</span> Box has got you covered
+                </h2>
+                <p class="order__description">
+                    Our boxes are packed with delicious, nutritious vegetables, perfect 
+                    for anyone looking to eat healthier or support local farmers. Order your 
+                    box today and start enjoying the best that nature has to offer!
+                </p>
+            </div>
+            <div class="order__form-wrapper">
+                <div class="order__item">
+                   <form action="" class="order__form">
+                        <p class="order__form-text text_letter-spacing">
+                            Ordering <span class="order__form-text_span-from-us">from us</span> is quick 
+                            and easy! Fill out <span class="order__form-text_span-form">the form</span> below and we will contact you !
+                        </p>
+                        <input type="text" class="order__form-input order__form-input--radius30" id="full-name" placeholder="Full Name">
+                        <input type="text" class="order__form-input order__form-input--radius30" id="email" placeholder="Email">
+                        <input type="text" class="order__form-input order__form-input--radius15" id="comment" placeholder="Comment">
+                        <button class="order__form-button">SEND</button>
+                    </form>  
+                </div>
+                <div class="order__social order__item">
+                    <div class="order__social-img-wrapper">
+                        <img src="./assets/order__social_img.png" alt="Your order" class="order__social-img">
+                    </div>
+                    
+                    <div class="order__social-media">
+                        <p class="order__social-text text_letter-spacing">
+                            Follow us on our social networks:
+                        </p>
+                        <div class="order__social-links">
+                            <a href="#" class="order__social-link text_letter-spacing">instagram</a>
+                            <a href="#" class="order__social-link text_letter-spacing">facebook</a>
+                            <a href="#" class="order__social-link text_letter-spacing">youtube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer__menu-contact">
+            <div class="footer__info">
+                <img src="./assets/logo.svg" alt="GREEN.HARVEST" class="footer__logo">
+                <p class="footer__description">
+                    Whether you're looking for a healthy snack or a thoughtful gift, our fruit baskets are the perfect choice.
+                </p>
+            </div>
+            <div class="footer__menu">
+                <div class="footer__menu-links">
+                    <a href="#infoblock" class="footer__link text_letter-spacing">how it works</a>
+                    <a href="#vegetables" class="footer__link text_letter-spacing">vegetables</a>
+                    <a href="#reviews" class="footer__link text_letter-spacing">reviews</a>
+                </div>
+                <div class="footer__contact">
+                    <a href="tel:+380(68)443-94-26" class="footer__number text_letter-spacing">+380 (68) 443-94-26</a>
+                    <p class="footer__address text_letter-spacing">
+                        1678 S. Pioneer Road Salt Lake City UT 84104
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__privacy-policy">
+            <div class="footer__text">
+                <p class="footer__text-privacy text_letter-spacing">Privacy Policy</p>
+                <p class="footer__text-cookie text_letter-spacing">Cookie settings</p>
+            </div>
+            <div class="footer__policy">
+                <p class="footer__text-policy text_letter-spacing">©Green Harvest 2023</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
